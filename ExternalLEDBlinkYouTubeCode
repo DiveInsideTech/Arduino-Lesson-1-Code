@@ -1,0 +1,31 @@
+#define RED 12
+#define GREEN 11
+#define BLUE 10
+
+
+void setup()
+{
+  //Initializes pin 12 as output
+  pinMode(RED,OUTPUT);
+   pinMode(GREEN,OUTPUT);
+    pinMode(BLUE,OUTPUT);
+}
+
+void loop()
+{
+//Blinking
+  digitalWrite(RED,HIGH); //Red on
+  delay(100); //Wait half a second
+  digitalWrite(RED,LOW); //Red off
+  delay(100); //Wait half a second
+
+   digitalWrite(GREEN,HIGH); //GREEN on
+  delay(100); //Wait half a second
+  digitalWrite(GREEN,LOW); //GREEN off
+  delay(100); //Wait half a second
+
+   digitalWrite(BLUE,HIGH); //BLUE on
+  delay(100); //Wait half a second
+  digitalWrite(BLUE,LOW); //BLUE off
+  delay(100); //Wait half a second
+}
